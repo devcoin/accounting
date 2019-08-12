@@ -1,8 +1,9 @@
 """
 Read https address and save text to a file."
 
-python https.py -address https://raw.github.com/Unthinkingbit/charity/master/receiver_0.csv -out https.txt
+python https.py -address https://raw.github.com/devcoin/accounting/master/receiver_0.csv -out https.txt
 
+NOTE: Forked from Unthinkingbit's https://github.com/Unthinkingbit/charity/
 """
 
 import sys

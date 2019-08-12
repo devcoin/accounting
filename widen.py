@@ -53,7 +53,7 @@ def writeFolder(folderName, peerRootAddress, round):
 	print('')
 	peerText = almoner.getLocationText(peerAddress)
 	peerTextUntilCoins = peerText[: peerText.find('_begincoins')]
-	unthinkingbitString = 'https://raw.github.com/Unthinkingbit/charity/master/receiver.csv'
+	unthinkingbitString = 'https://raw.github.com/devcoin/accounting/master/receiver.csv'
 	fuzzyString = 'http://devcoinpool.btc-music.com/receiver/receiver.csv'
 	peerTextUntilCoins = peerTextUntilCoins.replace(unthinkingbitString, fuzzyString)
 	print('Peer text until coins:')

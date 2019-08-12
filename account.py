@@ -35,7 +35,7 @@ python
 If python 2.x is not on your machine, download the latest python 2.x, which is available from:
 http://www.python.org/download/
 
-NOTE: This file is an adaptation of Unthinkingbit's https://raw.githubusercontent.com/devcoin/accounting/master/account.py
+NOTE: Forked from Unthinkingbit's https://github.com/Unthinkingbit/charity/
 """
 
 import almoner

@@ -113,9 +113,9 @@ Since pure charity didn't work, devcoin was changed to a beneficial organization
 ===Projects===
 Devcoin funds open source projects with [[devcoin bounty|bounties for accomplishments]] and regular payments for active developers.
 
-The bounty files are named bounty_*.csv, for example [https://raw.github.com/Unthinkingbit/charity/master/bounty_16.csv bounty_16.csv], and they can be seen in the [https://github.com/Unthinkingbit/charity charity folder].
+The bounty files are named bounty_*.csv, for example [https://raw.github.com/devcoin/accounting/master/bounty_16.csv bounty_16.csv], and they can be seen in the [https://github.com/devcoin/accounting charity folder].
 
-Active developers are on the [[bitcoin share list]] and the [[devcoin share list]]. At this time, devcoins are going to developers of [[start|devtome]], [[devcoin]], bitcoin, [[Open Transactions]], and namecoin. New developers join the lists, and some old developers stop developing, so those lists have been changed many times. Old versions can be accessed from the [https://github.com/Unthinkingbit/charity/commits/master/bitcoinshare.html bitcoin share history], and the [https://github.com/Unthinkingbit/charity/commits/master/devcoinshare.html devcoin share history].
+Active developers are on the [[bitcoin share list]] and the [[devcoin share list]]. At this time, devcoins are going to developers of [[start|devtome]], [[devcoin]], bitcoin, [[Open Transactions]], and namecoin. New developers join the lists, and some old developers stop developing, so those lists have been changed many times. Old versions can be accessed from the [https://github.com/devcoin/accounting/commits/master/bitcoinshare.html bitcoin share history], and the [https://github.com/devcoin/accounting/commits/master/devcoinshare.html devcoin share history].
 
 ===Market Capitalization===
 The market capitalization is calculated from the average of the bid and ask on vircurex, times the block number, times 50,000 DVC/block. For example on August 18, 2012, the market capitalization was:
@@ -300,7 +300,7 @@ Random numbers for voting are determined by a hash of the string composed of the
 
 ===Receiver Files===
 ====Client Procedure====
-[https://raw.github.com/Unthinkingbit/charity/master/receiver.h Receiver.h] accesses a synchronized list of receivers.
+[https://raw.github.com/devcoin/accounting/master/receiver.h Receiver.h] accesses a synchronized list of receivers.
 
 For example, say the devcoin client requests the height 9000 receivers, the height step is 4000 and only the root receiver_0.csv saved.  Receiver.h will first look for the receiver_2.csv file.  Since it's not there it will step down and look for receiver_1.csv.  Still not there so it looks for and finds receiver_0.csv.  It then downloads receiver_1.csv by looking at the peers in receiver_0.csv and saves in the data directory.  It then downloads receiver_2.csv by looking at the peers in receiver_1.csv and saves in the data directory.  Once it has receiver_2.csv, it parses it to get the list of receivers and uses height modulo list length to return the receivers for height 9000.
 
@@ -335,10 +335,10 @@ Then in CreateBlock, the share per address is calculated by dividing the generat
 ====Viewing Disbursements====
 To view your own disbursements, the easiest way is to download the [https://github.com/knotwork/old-devcoin-qt devcoin-qt client]. In that client you'll see payments from generation.
 
-If you can not install that on your system, then you can look for disbursements in a [[devcoin block explorer]]. For example, to find the payouts to the devcoin address 17vec4jQGCzMEsTnivizHPaowE715tu2CB in the [https://github.com/Unthinkingbit/charity/blob/master/receiver_16.csv round 16 receiver file]. Counting from zero in the receiver file, the address is at line 22. Round 16 starts on block 16 * 4,000 = 64,000. You'll see the generation share in block 64,022 in a block explorer. In [http://glari.ch:2750/chain/Devcoin Icoin's block explorer], you can go the [http://glari.ch:2750/block/33469e22f29222938b307d3cc416aa31f37b86efa57fa1d8215bb81f0b337e1b 64,022 block], and see the payment for 45,000 devcoins in the generation row of that block. Since there are 47 receiver lines in round 16, another payment to that address will be in [http://glari.ch:2750/block/495ae19916f36ab9ea1d5addc8b544de1c545ee26e2d2c1fb114c5a333a66d20 block 64,069]. Other payments to that address will be in block 64,116, block 64,163, etc.. Round 16 lasts until block 67,999.
+If you can not install that on your system, then you can look for disbursements in a [[devcoin block explorer]]. For example, to find the payouts to the devcoin address 17vec4jQGCzMEsTnivizHPaowE715tu2CB in the [https://github.com/devcoin/accounting/blob/master/receiver_16.csv round 16 receiver file]. Counting from zero in the receiver file, the address is at line 22. Round 16 starts on block 16 * 4,000 = 64,000. You'll see the generation share in block 64,022 in a block explorer. In [http://glari.ch:2750/chain/Devcoin Icoin's block explorer], you can go the [http://glari.ch:2750/block/33469e22f29222938b307d3cc416aa31f37b86efa57fa1d8215bb81f0b337e1b 64,022 block], and see the payment for 45,000 devcoins in the generation row of that block. Since there are 47 receiver lines in round 16, another payment to that address will be in [http://glari.ch:2750/block/495ae19916f36ab9ea1d5addc8b544de1c545ee26e2d2c1fb114c5a333a66d20 block 64,069]. Other payments to that address will be in block 64,116, block 64,163, etc.. Round 16 lasts until block 67,999.
 
 ====Generating the Files====
-To generate a file, download the [https://github.com/Unthinkingbit/charity github charity repository]. Then generate the devtome earnings file, then the marketing earnings file (which requires devtome earnings), then the receiver file (which requires devtome earnings and marketing earnings).
+To generate a file, download the [https://github.com/devcoin/accounting github charity repository]. Then generate the devtome earnings file, then the marketing earnings file (which requires devtome earnings), then the receiver file (which requires devtome earnings and marketing earnings).
 
 To generate files for round 23, starting with the devtome earnings, in that folder open a terminal and type:
 <code>
@@ -359,7 +359,7 @@ Devtome Earnings,devtome_earnings_xx.csv
 Marketing Earnings,marketing_earnings_xx.csv
 </code>
 
-For example, in round 23 those files are the [https://raw.github.com/Unthinkingbit/charity/master/bitcoinshare.html list of bitcoin developers], [https://raw.github.com/Unthinkingbit/charity/master/bounty_23.csv round 23 bounty file], [https://raw.github.com/Unthinkingbit/charity/master/devcoinshare.html list of non bitcoin developers], [https://raw.github.com/Unthinkingbit/charity/master/devtome_earnings_23.csv round 23 devtome earnings file], and [https://raw.github.com/Unthinkingbit/charity/master/marketing_earnings_23.csv round 23 marketing earnings file].
+For example, in round 23 those files are the [https://raw.github.com/devcoin/accounting/master/bitcoinshare.html list of bitcoin developers], [https://raw.github.com/devcoin/accounting/master/bounty_23.csv round 23 bounty file], [https://raw.github.com/devcoin/accounting/master/devcoinshare.html list of non bitcoin developers], [https://raw.github.com/devcoin/accounting/master/devtome_earnings_23.csv round 23 devtome earnings file], and [https://raw.github.com/devcoin/accounting/master/marketing_earnings_23.csv round 23 marketing earnings file].
 
 Once all those files are in the folder, the command to finally make the receiver file is:
 <code>
@@ -386,23 +386,23 @@ fi
 # First please download the latest version of:
 
 rm -f bitcoinshare.html
-wget https://raw.github.com/Unthinkingbit/charity/master/bitcoinshare.html
+wget https://raw.github.com/devcoin/accounting/master/bitcoinshare.html
 rm -f devcoinshare.html
-wget https://raw.github.com/Unthinkingbit/charity/master/devcoinshare.html
+wget https://raw.github.com/devcoin/accounting/master/devcoinshare.html
 rm -f peer.csv
-wget https://raw.github.com/Unthinkingbit/charity/master/peer.csv
+wget https://raw.github.com/devcoin/accounting/master/peer.csv
 rm -f bounty_${round}.csv
-wget https://raw.github.com/Unthinkingbit/charity/master/bounty_${round}.csv
+wget https://raw.github.com/devcoin/accounting/master/bounty_${round}.csv
 rm -f devtome_earnings_${round}.csv
-wget https://raw.github.com/Unthinkingbit/charity/master/devtome_earnings_${round}.csv
+wget https://raw.github.com/devcoin/accounting/master/devtome_earnings_${round}.csv
 rm -f marketing_earnings_${round}.csv
-wget https://raw.github.com/Unthinkingbit/charity/master/marketing_earnings_${round}.csv
+wget https://raw.github.com/devcoin/accounting/master/marketing_earnings_${round}.csv
 rm -f account.py
-wget https://raw.github.com/Unthinkingbit/charity/master/account.py
+wget https://raw.github.com/devcoin/accounting/master/account.py
 rm -f account_location.csv
-wget https://raw.github.com/Unthinkingbit/charity/master/account_location.csv
+wget https://raw.github.com/devcoin/accounting/master/account_location.csv
 rm -f almoner.py
-wget https://raw.github.com/Unthinkingbit/charity/master/almoner.py
+wget https://raw.github.com/devcoin/accounting/master/almoner.py
 
 # Then in that folder open a terminal and type:
 python account.py -round round

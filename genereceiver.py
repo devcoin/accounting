@@ -10,13 +10,13 @@ The -h option, the -help option, will print the help, which is this document.  T
 python genereceiver.py -h
 
 ===Input===
-Default is https://raw.github.com/Unthinkingbit/charity/master/account_3.csv
+Default is https://raw.github.com/devcoin/accounting/master/account_3.csv
 
 The -input option sets the input file name.  The example follows:
-python genereceiver.py -input https://raw.github.com/Unthinkingbit/charity/master/account_3.csv
+python genereceiver.py -input https://raw.github.com/devcoin/accounting/master/account_3.csv
 
 An example of an account information input file is at:
-https://raw.github.com/Unthinkingbit/charity/master/account_3.csv
+https://raw.github.com/devcoin/accounting/master/account_3.csv
 
 ===Output===
 Default is test_receiver.csv
@@ -25,7 +25,7 @@ The -output option sets the output.  If the output ends with stderr, the output 
 python genereceiver.py -output test_receiver.csv
 
 An example of an genereceiver output file is at:
-https://raw.github.com/Unthinkingbit/charity/master/test_receiver_3.csv
+https://raw.github.com/devcoin/accounting/master/test_receiver_3.csv
 
 
 ==Install==
@@ -34,6 +34,8 @@ python
 
 If python 2.x is not on your machine, download the latest python 2.x, which is available from:
 http://www.python.org/download/
+
+NOTE: Forked from Unthinkingbit's https://github.com/Unthinkingbit/charity/
 """
 
 import cStringIO
@@ -242,7 +244,7 @@ def writeOutput(arguments):
 	if '-h' in arguments or '-help' in arguments:
 		print(  __doc__)
 		return
-	fileName = getParameter(arguments, 'https://raw.github.com/Unthinkingbit/charity/master/account_3.csv', 'input')
+	fileName = getParameter(arguments, 'https://raw.github.com/devcoin/accounting/master/account_3.csv', 'input')
 	suffixNumber = getSuffixNumber(fileName)
 	outputTo = getSuffixedFileName(getParameter(arguments, 'test_receiver.csv', 'output'), str(suffixNumber))
 	outputText = getOutput(fileName, suffixNumber)

@@ -14,14 +14,14 @@ The -input option sets the input file name.  The example follows:
 python almoner.py -input bitcoinshare.html
 
 An example of a donation information input file is at:
-https://github.com/Unthinkingbit/charity/blob/master/bitcoinshare.html
+https://github.com/devcoin/accounting/blob/master/bitcoinshare.html
 
 ===Output===
 The -output option sets the output.  If the output ends with stderr, the output will be sent to stderr  If the output ends with stdout or is empty, the output will be sent to stdout.  If the output does not end with stderr or stdout, the output will be written to a file by that name.  The example follows:
 python almoner.py -input bitcoinshare.html
 
 An example of an almoner output file is at:
-https://github.com/Unthinkingbit/charity/blob/master/almoner.csv
+https://github.com/devcoin/accounting/blob/master/almoner.csv
 
 
 ==Install==
@@ -30,6 +30,8 @@ python
 
 If python 2.x is not on your machine, download the latest python 2.x, which is available from:
 http://www.python.org/download/
+
+NOTE: Forked from Unthinkingbit's https://github.com/Unthinkingbit/charity/
 """
 
 import cStringIO
