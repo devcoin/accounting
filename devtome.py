@@ -144,7 +144,8 @@ def getEarningsText(authors):
 		lastPayoutString = str(author.tomecount.earnings)
 		if lastPayoutString != '0':
 			cString.write('%s,%s,%s-Word Count(%s)\n' % (name, coinAddress, lastPayoutString, author.sourceAddress.replace('&do=edit', '')))
-	return cString.getvalue()
+	# ~ return cString.getvalue()
+	return ''
 
 def getImageCount(linkText):
 	'Get the image count of the page linked to in the line.'
