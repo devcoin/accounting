@@ -60,6 +60,9 @@ import almoner
 import cStringIO
 import sys
 
+import ssl
+ssl.match_hostname = lambda cert, hostname: True
+
 
 __license__ = 'MIT'
 
