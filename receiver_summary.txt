@@ -10,7 +10,7 @@ http://jerpat.us/dcr/uploads/receiver_98.csv
 The account file is at:
 http://galaxies.mygamesonline.org/account_98.csv
 
-There were 239 original receiver lines, so the average number of devcoins per share is 180,000,000 dvc / 239 = 753,138 dvc. Administrator pay is 34.0 shares, 14.2 percent of the total.
+There were 248 original receiver lines, so the average number of devcoins per share is 180,000,000 dvc / 248 = 725,806 dvc. Administrator pay is 34.0 shares, 13.7 percent of the total.
 
 People on that list will start getting those coins in round 98, starting at block 392,000. The procedure for generating the receiver files is at:
 http://devtome.com/doku.php?id=devcoin#generating_the_files
