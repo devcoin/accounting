@@ -229,7 +229,7 @@ def writeOutput(arguments):
 		print(__doc__)
 		return
 	round = int(almoner.getParameter(arguments, '27', 'round'))
-	ratings = getRatings(round)
+	ratings = [] #getRatings(round)
 	recipientDictionary = account.getRecipientDictionary(round)
 	earningsText = getEarningsText(ratings, recipientDictionary)
 	ratingText = getRatingText(ratings, round)

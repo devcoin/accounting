@@ -560,7 +560,8 @@ def writeOutput(arguments):
 	ratingFileName = almoner.getParameter(arguments, 'rating_%s.csv' % round, 'rating')
 	viewFileName = almoner.getParameter(arguments, 'devtome_analytics_%s.csv' % round, 'view')
 	categoryDictionary = {}
-	lines = almoner.getTextLines(almoner.getFileText(previousFileName))
+	nolines = almoner.getTextLines(almoner.getFileText(previousFileName))
+	lines = [nolines[0]]
 	titleLine = lines[0]
 	titles = titleLine.split(',')
 	backupFolder = rootFileName + '_articles'
