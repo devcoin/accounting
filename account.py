@@ -165,7 +165,7 @@ def getAccountLines(arguments, suffixNumberString):
 		accountLines.append(name + ': %s Shares' % numberOfShares)
 		accountLines += extraLines
 		accountLines.append('')
-	addAdministratorBonus(accountLines)
+	# ~ addAdministratorBonus(accountLines)
 	return accountLines
 
 def getAddressDictionary(round):
