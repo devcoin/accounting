@@ -19,4 +19,4 @@ The next bounties will go into round 100:
 http://devticker.pw/business_bounty/business_bounty_100.csv
 
 The next ongoing payments will go into round 100:
-http://dvccountdown.blisteringdevelopers.com/ongoing_100.csv
+https://bitbucket.org/develCuy/devcoin/raw/master/charity/ongoing_100.csv

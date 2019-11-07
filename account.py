@@ -410,7 +410,7 @@ def getSummaryText(accountLines, originalReceiverLines, peerLines, suffixNumber)
 	cString.write('\nThe next bounties will go into round %s:\n' % suffixNumberPlusOne)
 	cString.write('http://devticker.pw/business_bounty/business_bounty_%s.csv\n' % suffixNumberPlusOne)
 	cString.write('\nThe next ongoing payments will go into round %s:\n' % suffixNumberPlusOne)
-	cString.write('http://dvccountdown.blisteringdevelopers.com/ongoing_%s.csv\n' % suffixNumberPlusOne)
+	cString.write('https://bitbucket.org/develCuy/devcoin/raw/master/charity/ongoing_%s.csv\n' % suffixNumberPlusOne)
 	return cString.getvalue()
 
 def writeOutput(arguments):
