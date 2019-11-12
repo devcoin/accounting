@@ -136,6 +136,8 @@ def getAccountLines(arguments, suffixNumberString):
 	for linkLine in linkLines:
 		linkLineSplit = linkLine.split(',')
 		name = linkLineSplit[0]
+		if 'Devcoin Share List' == name or 'Bitcoin Share List' == name:
+			continue
 		location = linkLineSplit[1]
 		extraLines = []
 		if '_xx' in location:
