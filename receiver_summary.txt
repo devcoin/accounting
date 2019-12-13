@@ -1,21 +1,21 @@
-The round 100 receiver files have been uploaded to:
-http://galaxies.mygamesonline.org/receiver_100.csv
-http://devcoinpool.btc-music.com/receiver/receiver_100.csv
-http://devcoin.darkgamex.ch/receiver_100.csv
-http://receiver.d.evco.in/receiver_100.csv
-http://receiver01.devcoin.org/receiver_100.csv
-http://receiver02.devcoin.org/receiver/receiver_100.csv
+The round 101 receiver files have been uploaded to:
+http://galaxies.mygamesonline.org/receiver_101.csv
+http://devcoinpool.btc-music.com/receiver/receiver_101.csv
+http://devcoin.darkgamex.ch/receiver_101.csv
+http://receiver.d.evco.in/receiver_101.csv
+http://receiver01.devcoin.org/receiver_101.csv
+http://receiver02.devcoin.org/receiver/receiver_101.csv
 
 The account file is at:
-http://galaxies.mygamesonline.org/account_100.csv
+http://galaxies.mygamesonline.org/account_101.csv
 
-There were 226 original receiver lines, so the average number of devcoins per share is 180,000,000 dvc / 226 = 796,460 dvc. Administrator pay is 10.0 shares, 4.4 percent of the total.
+There were 224 original receiver lines, so the average number of devcoins per share is 180,000,000 dvc / 224 = 803,571 dvc. Administrator pay is 6.0 shares, 2.7 percent of the total.
 
-People on that list will start getting those coins in round 100, starting at block 400,000. The procedure for generating the receiver files is at:
+People on that list will start getting those coins in round 101, starting at block 404,000. The procedure for generating the receiver files is at:
 http://devtome.com/doku.php?id=devcoin#generating_the_files
 
-The next bounties will go into round 101:
-http://devticker.pw/business_bounty/business_bounty_101.csv
+The next bounties will go into round 102:
+http://devticker.pw/business_bounty/business_bounty_102.csv
 
-The next ongoing payments will go into round 101:
-https://bitbucket.org/develCuy/devcoin/raw/master/charity/ongoing_101.csv
+The next ongoing payments will go into round 102:
+https://bitbucket.org/develCuy/devcoin/raw/master/charity/ongoing_102.csv
