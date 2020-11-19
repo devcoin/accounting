@@ -1,20 +1,20 @@
-The round 111 receiver files have been uploaded to:
-http://galaxies.mygamesonline.org/receiver_111.csv
-http://devcoin.darkgamex.ch/receiver_111.csv
-http://receiver.d.evco.in/receiver_111.csv
-http://receiver01.devcoin.org/receiver_111.csv
-http://receiver02.devcoin.org/receiver/receiver_111.csv
+The round 112 receiver files have been uploaded to:
+http://galaxies.mygamesonline.org/receiver_112.csv
+http://devcoin.darkgamex.ch/receiver_112.csv
+http://receiver.d.evco.in/receiver_112.csv
+http://receiver01.devcoin.org/receiver_112.csv
+http://receiver02.devcoin.org/receiver/receiver_112.csv
 
 The account file is at:
-http://galaxies.mygamesonline.org/account_111.csv
+http://galaxies.mygamesonline.org/account_112.csv
 
 There were 223 original receiver lines, so the average number of devcoins per share is 180,000,000 dvc / 223 = 807,175 dvc. Administrator pay is 0.0 shares, 0.0 percent of the total.
 
-People on that list will start getting those coins in round 111, starting at block 444,000. The procedure for generating the receiver files is at:
+People on that list will start getting those coins in round 112, starting at block 448,000. The procedure for generating the receiver files is at:
 http://devtome.com/doku.php?id=devcoin#generating_the_files
 
-The next bounties will go into round 112:
-http://devticker.pw/business_bounty/business_bounty_112.csv
+The next bounties will go into round 113:
+http://devticker.pw/business_bounty/business_bounty_113.csv
 
-The next ongoing payments will go into round 112:
-https://bitbucket.org/develCuy/devcoin/raw/master/charity/ongoing_112.csv
+The next ongoing payments will go into round 113:
+https://bitbucket.org/develCuy/devcoin/raw/master/charity/ongoing_113.csv
